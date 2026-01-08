@@ -1319,3 +1319,24 @@ body {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
 }
+
+.birthday-text {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1000;
+  color: white;
+  font-size: 5vmin;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+               0 0 30px rgba(255, 192, 203, 0.5);
+  animation: birthday-glow 3s ease-in-out infinite alternate;
+  pointer-events: none;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+  will-change: transform, text-shadow;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
